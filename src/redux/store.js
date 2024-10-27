@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
-
 import { contactsReducer } from './contactsSlice.js';
 import { filterReducer } from './filtersSlice.js';
+import storage from 'redux-persist/lib/storage';
 
 import {
   persistStore,
@@ -13,8 +13,6 @@ import {
   PURGE,
   REGISTER,
 } from 'redux-persist';
-
-import storage from 'redux-persist/lib/storage'; // defaults to localStorage for web
 
 const contactsConfig = {
   key: 'contacts',

@@ -19,6 +19,7 @@ const SearchBox = () => {
         value={filterName}
         onChange={onChange}
         type="text"
+        id="searchBox"
       />
     </div>
   );
