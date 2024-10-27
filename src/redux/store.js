@@ -15,8 +15,9 @@ import {
 } from 'redux-persist';
 
 const contactsConfig = {
-  key: 'contacts',
+  key: 'contacts', // ключ з localStorage
   storage,
+  // whitelist: [] - синхронізація полів
 };
 export const store = configureStore({
   reducer: {
